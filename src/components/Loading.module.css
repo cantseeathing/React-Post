@@ -1,0 +1,29 @@
+.container {
+    /*display: none; !* Hidden by default *!*/
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(154, 125, 188, 0.9); /* Black w/ opacity */
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 20px;
+    -webkit-mask: radial-gradient(circle closest-side, #000 94%, #0000) left/20% 100%;
+    background: linear-gradient(#000 0 0) left/0% 100% no-repeat #ddd;
+    animation: l17 2s infinite steps(6);
+}
+
+@keyframes l17 {
+    100% {
+        background-size: 120% 100%
+    }
+}
